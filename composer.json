@@ -1,0 +1,35 @@
+{
+    "name": "greezlu/ws-framework",
+    "description": "WebServer Framework",
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://github.com/greezlu/ws-framework",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "greezlu",
+            "email": "greezlu@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~7.4.0",
+        "greezlu/ws-router": "*",
+        "greezlu/ws-filesystem": "*",
+        "greezlu/ws-session": "*",
+        "greezlu/ws-database": "*",
+        "greezlu/ws-exception": "*"
+    },
+    "keywords": [
+        "php",
+        "framework",
+        "server"
+    ],
+    "scripts": {
+        "post-package-install": "\\WebServer\\Core\\System::directory"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebServer\\": "app"
+        }
+    }
+}
