@@ -3,5 +3,5 @@ Composer package.
 
 ## Install
 ```
-composer require greezlu/ws-framework
+composer create-project greezlu/ws-framework
 ```
